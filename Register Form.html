@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Form</title>
+    <link rel="stylesheet" href="RegisterForm.css">
+    <link rel="stylesheet" href="clockpicker-gh-pages/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="clockpicker-gh-pages/dist/bootstrap-clockpicker.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/css/bootstrap-datepicker.css"rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.js"></script>
+    <script src="clockpicker-gh-pages/assets/js/jquery.min.js"></script>
+    <script src="clockpicker-gh-pages/dist/bootstrap-clockpicker.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/js/bootstrap-datepicker.js"></script>
+    <script type="text/javascript"src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-show-password/1.0.3/bootstrap-show-password.min.js"></script>
+    <script src="timezonesfullmin.js"></script>
+    <script src="RegisterForm.js"></script>
+</head>
+
+<body id="body">
+    <form class="container" onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off" id="form">
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-6" id="SignIn">
+                <div>
+                    <h2 class="text-center">Registration Form</h2>
+                </div>
+                <div>
+                    <label id="NameLbl">Name</label>
+                    
+                    <input type="text" id="NameTxt" name="Name" placeholder="Enter your Name" class="form-control"><span id="NameError"></span>
+                </div>
+                <div>
+                    <label id="EmailLbl">E-mail</label>
+                    <input type="text" id="EmailTxt" name="Email" placeholder="Enter your Email address"
+                        class="form-control">
+                    <span id="EmailSpan"></span>
+                </div>
+                <div>
+                    <label id="AgeLbl">Age</label>
+                    <input type="text" id="AgeTxt" name="Age" class="form-control" placeholder="Enter your Age">
+                    <span id="AgeSpan"></span>
+                </div>
+                <div>
+                        <label id="DobLbl">Date of Birth</label>
+                        <input class="date form-control" id="DobTxt" type="text" name="Dob"
+                            placeholder=" Select the Date">
+                    <span id="DateSpan"></span>
+                </div>
+                <div>
+                    <label id="PhoneNumberLbl">Phone Number</label>
+                    <input id="PhoneNumberTxt" type="text" class="form-control" name="PhoneNumber" placeholder="Enter your Phone Number">
+                        <span id="PhoneNumberSpan"></span>  
+                </div>
+                <div>
+                    <label id="TimeZoneLbl">Time Zone</label>
+                    <select id="TimeZone" class="form-control" name="Timezone">
+                    </select>
+                    <span id="TimezoneSpan"></span>  
+                </div>
+                <div class="row"> 
+                    <div class="col-sm-6">
+                        <label id="PasswordLbl">Password</label>
+                        <input type="password" id="PasswordTxt" class="form-control" name="Password"
+                            data-toggle="password" placeholder="Password">
+                            <span id="PasswordSpan"></span> 
+                    </div>
+                    <div class="col-sm-6">
+                        <label id="ConfirmPasswordLbl">Confirm Password</label>
+                        <input type="password" id="ConfirmPasswordTxt" class="form-control" name="ConfirmPassword"
+                            data-toggle="password" placeholder="Password">
+                            <span id="ConfirmPasswordSpan"></span> 
+                    </div>
+                </div><br>
+                <div>
+                    <button type="submit" id="submit" class="btn btn-success">Submit</button>
+                    <input type="button" id="Cancel" class="btn btn-danger" value="Cancel">
+                </div>
+            </div>
+            <div class="col-sm-4"></div>
+        </div>
+    </form><br><br>
+    <form>
+        <div>
+            <table class="table table-bordered " id="TableId">
+                <thead>
+                    <th>Name</th>
+                    <th>E-mail</th>
+                    <th>Age</th>
+                    <th>Date of Birth</th>
+                    <th>Time Zone</th>
+                    <th>Phone Number</th>
+                    <th>Password</th>
+                    <th>Confirm Password</th>
+                    <th></th>
+                    <th></th>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+
+        </div>
+    </form>
+</body>
+
+</html>
